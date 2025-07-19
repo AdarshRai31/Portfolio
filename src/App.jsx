@@ -6,6 +6,7 @@ import { Home } from "./components/Home";
 import { AboutMe } from "./components/AboutMe";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
+import { GlassAboutMe } from "./components/GlassAboutMe";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -26,6 +27,7 @@ function App() {
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
         <Home></Home>
         <AboutMe></AboutMe>
+        {/* <GlassAboutMe></GlassAboutMe> */}
         <Projects></Projects>
         <Contact></Contact>
 
