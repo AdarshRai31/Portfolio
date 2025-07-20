@@ -27,11 +27,11 @@ export const Projects = () => {
       <section
         name="projects"
         id="projects"
-        className=" dark:bg-gray-900 py-16"
+        className=" dark:bg-gray-900 py-16 bg-[#F7F9FC]"
       >
         <div className="container mx-auto px-4">
           <h3 className="text-4xl font-bold mb-8 text-center">Projects</h3>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 display-flex justify-center items-center">
             {projects.map((project, num) => (
               <div
                 key={num}

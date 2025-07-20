@@ -6,9 +6,9 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-blue-600 text-white fixed top-0 left-0 w-full z-50 shadow-md">
+    <header className=" text-black bg-white/80 backdrop-blur-md fixed top-0 left-0 w-full z-50 shadow-md dark:bg-black/60 dark:text-white">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold">MyPortfolio</h1>
+        <h1 className="text-xl font-bold">My Portfolio</h1>
         {/* Nav links (center/right on desktop) */}
         <div className="hidden sm:flex items-center space-x-6">
           <ul className="flex space-x-6">
@@ -107,7 +107,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
       </nav>
       {/* Mobile dropdown menu */}
       <div
-        className={`sm:hidden bg-blue-600 w-full px-4 pb-4 transition-all duration-300 ${
+        className={`sm:hidden bg-blue-600/0 w-full px-4 pb-4 transition-all dark:bg-black/0 duration-300 ${
           menuOpen ? "block" : "hidden"
         }`}
       >
